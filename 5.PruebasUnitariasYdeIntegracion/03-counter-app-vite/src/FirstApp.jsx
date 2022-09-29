@@ -10,7 +10,8 @@ const getMessages = () => "hola mundo";
 
 const FirstApp = ({title, subTitle}) => (
     <>
-        <h3>{ title }</h3>
+        {/*21. La propiedad data-testid nos sirve para colocar un identificador y poder recuperar el elemento en las pruebas -> FirstApp.test.jsx  */}
+        <h3 data-testid="test-tittle">{ title }</h3>
         <p>{ subTitle + 1 }</p>
     </>
 )
