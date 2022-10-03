@@ -3,6 +3,7 @@ import { useFetchGifs } from '../hooks/useFetchGifs';
 
 export const GifGrid = ({ category }) => {
 
+    //15. Para llamar un hook personalizado, se hace como cualquier otro hook
     const { images, isLoading } = useFetchGifs( category );
     
     return (
