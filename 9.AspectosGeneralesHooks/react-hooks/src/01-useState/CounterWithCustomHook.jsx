@@ -2,8 +2,10 @@ import { useCounter } from '../hooks/useCounter';
 
 export const CounterWithCustomHook = () => {
     
-    const { counter, increment, decrement, reset } = useCounter();
 
+    /*9.Un Custom hook se manda a llamar como cualquier otro hook, -> Message.jsx 
+        se puede desestructurar para utilizar todos sus metodos y atributos que retorna  */
+    const { counter, increment, decrement, reset } = useCounter();
 
     return (
         <>

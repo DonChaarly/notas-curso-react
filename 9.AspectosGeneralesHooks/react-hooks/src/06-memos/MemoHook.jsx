@@ -17,6 +17,12 @@ export const MemoHook = () => {
     const { counter, increment } = useCounter( 4000 );
     const [ show, setShow ] = useState(true);
 
+    /* 36. El hook useMemo sirve para evitar que ciertas funciones se ejecuten -> CallBackHook.jsx
+            cada vez que el componente se vuelva a renderizar\
+            Es muy parecido al useEffect, sin embargo este hook nos retorna lo que retorne la funcion especificada\
+            Como primer argumento se pasa el callBack, y como segundo argumento se pasa la lista de dependencias\
+            Cuando una dependencia cambie se ejecutara nuevamente el callBack
+     */
     const memorizedValue = useMemo( () => heavyStuff(counter), [counter])
 
     return (

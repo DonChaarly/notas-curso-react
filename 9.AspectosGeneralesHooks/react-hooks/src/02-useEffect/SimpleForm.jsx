@@ -20,14 +20,17 @@ export const SimpleForm = () => {
     }
 
 
+    //14. Cuando Se especifica un arreglo vacio el useEffect se ejcuta cada que se renderiza el componente
     useEffect( () => {
         // console.log('useEffect called!');
     }, []);
     
+    //15. Cuando se especifican estados, el useEffect se ejecuta cada que cambian los estados espedificados
     useEffect( () => {
         // console.log('formState changed!');
     }, [formState]);
 
+    //16. Se pueden indicar valores de un estado especifico, como el email del estado formState -> Message.jsx
     useEffect( () => {
         // console.log('email changed!');
     }, [ email ]);

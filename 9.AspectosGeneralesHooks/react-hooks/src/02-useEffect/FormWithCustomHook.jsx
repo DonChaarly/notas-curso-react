@@ -4,6 +4,9 @@ import { useForm } from '../hooks/useForm';
 
 export const FormWithCustomHook = () => {
 
+    /*23. Para llamar a nuestro customHook formState, se hace como cualquier otro hook, ->useFetch.js
+          Se pasa como parametro la estrucutra de nuestro formulario y se puede desestructurar lo que returna el hook
+    */
     const { formState, onInputChange, onResetForm, username, email, password } = useForm({
         username: '',
         email: '',
